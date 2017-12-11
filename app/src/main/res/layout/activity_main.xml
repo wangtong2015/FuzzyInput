@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.wangtong.fuzzyinput.MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/Main_View"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/Name_Input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="true"
+            android:hint="@string/prompt_name"
+            android:maxLines="1"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/Begin_Test"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/action_sign_in"
+            android:textAllCaps="false"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/showXY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/textview_show"
+            android:textColor="#0a02ff"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/character"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:textColor="#f25b63"
+            android:textSize="50sp" />
+        <ImageView
+            android:id="@+id/keyboard"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="150dp"
+            android:adjustViewBounds="true"
+            android:clickable="true"
+            android:contentDescription="@string/content_description"
+            android:focusable="true"
+            android:onClick="imageClick"
+            android:scaleType="fitEnd"
+            android:visibility="visible"
+            app:srcCompat="@drawable/keyboard" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

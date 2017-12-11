@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">FuzzyInput</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_name">被测人姓名</string>
+    <string name="action_sign_in">开始测试</string>
+    <string name="textview_show">实时显示坐标</string>
+    <string name="title_activity_main">模糊输入检测</string>
+    <string name="content_description">键盘</string>
+</resources>
